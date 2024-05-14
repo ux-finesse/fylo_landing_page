@@ -476,12 +476,17 @@ footer{
         margin: 0 1.5rem;
     }
 
+    .logo {
+        width: 7rem;
+    }
+
     .logo img{
         width: 50%;
     }
 
     .links ul{
         gap: 1rem;
+        font-size: 0.75rem;
     }
 
     h1, h2, h3{
