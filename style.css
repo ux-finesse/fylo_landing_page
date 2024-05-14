@@ -4,7 +4,8 @@
     box-sizing: border-box;
 }
 
-nav, .sect-1, .sec-2-cont, .sec-3-cont, .ft-cnt{
+nav, .sec-1-cont, .sec-2-cont, 
+.sec-3-cont, .ft-cnt{
     margin: 0 5rem;
 }
 
@@ -14,7 +15,7 @@ nav, .sect-1, .sec-2-cont, .sec-3-cont, .ft-cnt{
     padding: 1.5rem 0;
 }
 
-.logo img{
+.logo{
     width: 8rem;
     display: flex;
     margin-top: .15rem;
@@ -55,6 +56,7 @@ h1, h2, h3{
 .sec-1-cont, .sec-2-cont{
     display: flex;
     gap: 8rem;
+    padding: 9rem 0;
 }
 
 .soc-left{
@@ -69,8 +71,20 @@ h1, h2, h3{
     font-family: "Open Sans", sans-serif;
 }
 
+.soc-right{
+    display: flex;
+    justify-content: center;
+}
+
 .soc-right img{
     width: 38rem;
+}
+
+.form-1{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: .5rem;
 }
 
 
@@ -109,7 +123,6 @@ input:focus{
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    padding: 9rem 0;
 }
 
 .stc-right img{
@@ -138,14 +151,7 @@ input:focus{
     display: flex;
     align-items: center;
     border-bottom: 1px solid #599e8f;
-    width: 11rem;
     justify-content: center;
-}
-
-.wrks-btn span{
-    margin-top: .4rem;
-    margin-left: auto;
-    float: right;
 }
 
 .wrks-btn a{
@@ -211,7 +217,8 @@ input:focus{
     display: flex;
     flex-direction: row;
     padding: 6rem 0;
-    gap: 20rem;
+    gap: 16rem;
+    flex-wrap: wrap;
 }
 
 .strc-left{
@@ -231,10 +238,6 @@ input:focus{
     font-family: "Raleway", sans-serif;
     font-weight: 400;
     line-height: 1.313rem;
-}
-
-.strc-right{
-    width: 50%;
 }
 
 .form-2{
@@ -272,10 +275,6 @@ footer{
 
 .ft-tp{
     margin-bottom: 1rem;
-}
-
-.ft-logo{
-    width: 12%;
 }
 
 .ft-lnk0{
@@ -338,3 +337,135 @@ footer{
 .socials img{
     width: 2rem;
 }
+
+@media (max-width: 768px) {
+    nav, .sec-1-cont, .sec-2-cont, 
+    .sec-3-cont, .ft-cnt{
+        margin: 0 1.5rem;
+    }
+
+    .logo img{
+        width: 50%;
+    }
+
+    .links ul{
+        gap: 1rem;
+    }
+
+    h1, h2, h3{
+        font-size: 1.5rem;
+        text-align: center;
+        line-height: 2.2rem;
+    }
+
+    .sec-1-cont{
+        flex-direction: column-reverse;
+        margin-top: 3rem;
+        gap: 3rem;
+        padding: 0 0;
+    }
+
+    .soc-right img{
+        width: 100%;
+    }
+
+    .soc-left{
+        margin-top: 0;
+    }
+
+    .soc-left p, .strc-left p{
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .form-1{
+        gap: 1rem;
+    }
+
+    .form-1 input{
+        gap: 2rem;
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .form-1 button, .form-2 button{
+        width: 100%;
+    }
+
+    .sect-2{
+        background-image:url(img/bg-curve-mobile.svg);
+    }
+
+    .sec-2-cont{
+        flex-direction: column-reverse;
+        padding: 6.5rem 0;
+        gap: 4rem;
+    }
+
+    .sec-3-cont{
+        padding: 4rem 0;
+        gap: 2rem;
+        justify-content: center;
+    }
+
+    .strc-left, .strc-right{
+        width: 100%;
+    }
+
+    .stc-right img{
+        width: 100%;
+    }
+
+    .stc-lft-tp h1, .strc-left h4{
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+    .stc-lft-tp p{
+        width: 100%;
+    }
+
+    .strc-right{
+        width: 85%;
+    }
+
+    .wrks-btn-cnt{
+        display: flex;
+        justify-content: center;
+    }
+
+    .testimonial{
+        width: 100%;
+        gap: .5rem; 
+    }
+
+    .form-2{
+        gap: .5rem;
+
+    }
+
+    .form-2 input{
+        gap: 2rem;
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .form-2 button{
+        width: 100%;
+    }
+
+
+    .ft-btn{
+        gap: 3rem;
+        flex-direction: column;
+    }
+
+    footer {
+        padding: 4rem 0 2rem;
+    }
+
+    .socials{
+        justify-content: center;
+    }
+
+  }
