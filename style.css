@@ -7,6 +7,7 @@
 nav, .sec-1-cont, .sec-2-cont, 
 .sec-3-cont, .ft-cnt{
     margin: 0 5rem;
+
 }
 
 .nav-cont{
@@ -15,8 +16,8 @@ nav, .sec-1-cont, .sec-2-cont,
     padding: 1.5rem 0;
 }
 
-.logo{
-    width: 8rem;
+.logo img{
+    width: 50%;
     display: flex;
     margin-top: .15rem;
 }
@@ -49,9 +50,9 @@ h1, h2, h3{
     line-height: 3.4rem;
 }
 
-.sect-1, .sect-2{
-    margin-top: 6rem;
-}
+/* .sect-1, .sect-2{
+    margin-top: 1rem;
+} */
 
 .sec-1-cont, .sec-2-cont{
     display: flex;
@@ -64,6 +65,7 @@ h1, h2, h3{
     display: flex;
     flex-direction: column;
     margin-top: 6rem;
+    width: 50%;
 }
 
 .soc-left p{
@@ -74,6 +76,7 @@ h1, h2, h3{
 .soc-right{
     display: flex;
     justify-content: center;
+    width: 50%;
 }
 
 .soc-right img{
@@ -125,6 +128,10 @@ input:focus{
     background-size: cover;
 }
 
+.stc-right{
+    width: 50%;
+}
+
 .stc-right img{
     width: 34rem;
 }
@@ -133,6 +140,7 @@ input:focus{
     display: flex;  
     flex-direction: column;
     gap: 2.5rem;    
+    width: 50%;
 }
 
 .stc-lft-tp{
@@ -410,8 +418,9 @@ footer{
         flex-wrap: nowrap;
     }
 
-    .strc-left{
-        width: 85%;
+    .stc-left, .stc-right, 
+    .strc-left, .strc-right  {
+        width: 100%;
     }
 
     .stc-right img{
@@ -424,10 +433,6 @@ footer{
 
     .stc-lft-tp p{
         width: 100%;
-    }
-
-    .strc-right{
-        width: 85%;
     }
 
     .testimonial{
@@ -502,12 +507,13 @@ footer{
         padding: 0 0;
     }
 
-    .soc-right img{
+    .soc-right{
         width: 100%;
     }
 
     .soc-left{
         margin-top: 0;
+        width: 100%;
     }
 
     .soc-left p, .strc-left p{
@@ -546,11 +552,8 @@ footer{
         flex-wrap: wrap;
     }
 
-    .strc-left, .strc-right{
-        width: 100%;
-    }
-
-    .stc-right img{
+    .stc-left, .stc-right, 
+    .strc-left, .strc-right  {
         width: 100%;
     }
 
