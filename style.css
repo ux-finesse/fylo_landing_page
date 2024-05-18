@@ -112,7 +112,7 @@ h1, h2, h3{
     border: none;
 }
 
-.form-1 button:hover, .form-1 button:hover{
+.form-1 button:hover, .form-2 button:hover{
     background-color: #6281d5;
     cursor: pointer;
 }
@@ -369,6 +369,11 @@ footer{
     font-weight: 400;
     font-size: 0.875rem;
     color: #fff;
+}
+
+.ft-cnt a:hover{
+    text-decoration: underline;
+    color: #6281d5;
 }
 
 .ft-lnk1 ul, .ft-lnk2 ul{
