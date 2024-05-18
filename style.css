@@ -174,7 +174,8 @@ input:focus{
 }
 
 .stc-right img{
-    width: 34rem;
+    width: auto;
+    height: 30rem;
 }
 
 .stc-lft-tp{
@@ -266,15 +267,9 @@ input:focus{
 }
 
 .strc-left {
-    width: 34%;
+    width: 50%;
 }
 
-.strc-right  {
-    float: right;
-    margin-left: auto;
-    padding-right: 6rem;
-    
-}
 
 .strc-left h4{
     font-size: 1.6rem;
@@ -288,7 +283,16 @@ input:focus{
     color: #fff;
     font-family: "Raleway", sans-serif;
     font-weight: 400;
+    width: 70%;
     line-height: 1.313rem;
+}
+
+.strc-right  {
+    float: right;
+    margin-left: auto;
+    width: 50%;
+    padding-right: 6rem;
+    
 }
 
 .form-2{
@@ -363,7 +367,7 @@ footer{
     font-size: 0.875rem;
 }
 
-.ft-cnt a{
+.ft-btn a{
     text-decoration: none;
     font-family: "Open Sans", sans-serif;
     font-weight: 400;
@@ -371,7 +375,7 @@ footer{
     color: #fff;
 }
 
-.ft-cnt a:hover{
+.ft-btn a:hover{
     text-decoration: underline;
     color: #6281d5;
 }
@@ -392,6 +396,10 @@ footer{
 
 .socials img{
     width: 2rem;
+}
+
+.socials a:hover{
+    color: #6281d5;
 }
 
 @media (max-width: 1024px) {
@@ -439,11 +447,11 @@ footer{
     }
 
     .form-1 input{
-        width: 65%;
+        width: 100%;
         margin-right: 0;
     }
 
-    .form-1 button, .form-2 button{
+    .form-1 button{
         width: 30%;
     }
 
@@ -469,7 +477,8 @@ footer{
     }
 
     .stc-right img{
-        width: 90%;
+        width: auto;
+        height: 20rem;
     }
 
     .stc-lft-tp h1, .strc-left h4{
@@ -481,7 +490,7 @@ footer{
     }
 
     .testimonial{
-        width: 95%;
+        /* width: 95%; */
         gap: .5rem; 
     }
 
@@ -492,7 +501,7 @@ footer{
 
     .form-2 input{
         gap: 2rem;
-        width: 80%;
+        width: 100%;
         margin-right: 0;
     }
 
@@ -506,12 +515,12 @@ footer{
         flex-direction: column;
     }
 
-    .ft-tp img {
-        width: 15%;
-    }
-
     footer {
         padding: 4rem 0 2rem;
+    }
+
+    .ft-tp img{
+        width: 15%;
     }
 
     .socials{
@@ -642,10 +651,6 @@ footer{
     .ft-btn{
         gap: 3rem;
         flex-direction: column;
-    }
-
-    .ft-tp img {
-        width: 35%;
     }
 
     footer {
