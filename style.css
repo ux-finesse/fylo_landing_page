@@ -46,7 +46,7 @@ nav, .sec-1-cont, .sec-2-cont,
 
 h1, h2, h3{
     font-family: "Raleway", sans-serif;
-    font-size: 2.25rem;
+    font-size: 2.2rem;
     line-height: 3.4rem;
 }
 
@@ -57,7 +57,7 @@ h1, h2, h3{
 .sec-1-cont, .sec-2-cont{
     display: flex;
     gap: 8rem;
-    padding: 9rem 0;
+    padding: 4rem 0 9rem;
 }
 
 .soc-left{
@@ -98,7 +98,7 @@ h1, h2, h3{
     border-radius: .2rem;
     margin-right: .5rem;
     font-family: "Open Sans", sans-serif;
-    border: 1px solid #bfbfbf;
+    border: 0.063rem solid #bfbfbf;
 }
 
 .form-1 button, .form-2 button{
@@ -112,9 +112,40 @@ h1, h2, h3{
     border: none;
 }
 
-.form-1 button:hover, .form-2 button:hover{
+.form-1 button:hover, .form-1 button:hover{
     background-color: #6281d5;
     cursor: pointer;
+}
+
+#err{
+    font-family: "Open Sans", sans-serif;
+    font-size: 0.75rem;
+    color: red;
+    margin: 0.1rem 0 .5rem;
+}
+
+.err-hid, .errr-hid{
+    display: none;
+}
+
+#errr{
+    color: #fff;
+    margin: 0.1rem 0 ;
+    font-family: "Open Sans", sans-serif;
+    font-size: .75rem;
+}
+
+#email.red-border, #e-mail.red-border{
+    border-color: red;
+    border-width: 0.125rem;
+}
+
+#message{
+    margin-top: 0.625rem;
+    color: green;
+    font-size: 0.875;
+    font-weight: bold;
+    font-family: "Open Sans", sans-serif;
 }
 
 input:focus{
@@ -128,19 +159,22 @@ input:focus{
     background-size: cover;
 }
 
-.stc-right{
-    width: 50%;
-}
-
-.stc-right img{
-    width: 34rem;
-}
 
 .stc-left{
     display: flex;  
     flex-direction: column;
     gap: 2.5rem;    
     width: 50%;
+}
+
+.stc-right{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.stc-right img{
+    width: 34rem;
 }
 
 .stc-lft-tp{
@@ -228,12 +262,18 @@ input:focus{
     display: flex;
     flex-direction: row;
     padding: 6rem 0;
-    gap: 16rem;
-    flex-wrap: wrap;
+    gap: 10rem;
 }
 
-.strc-left{
-    width: 39%;
+.strc-left {
+    width: 34%;
+}
+
+.strc-right  {
+    float: right;
+    margin-left: auto;
+    padding-right: 6rem;
+    
 }
 
 .strc-left h4{
@@ -356,8 +396,8 @@ footer{
         margin: 0 1.5rem;
     }
     
-    .logo img{
-        width: 50%;
+    .logo{
+        width: 25%;
     }
 
     .links ul{
@@ -482,11 +522,7 @@ footer{
     }
 
     .logo {
-        width: 7rem;
-    }
-
-    .logo img{
-        width: 50%;
+        width: 30%;
     }
 
     .links ul{
