@@ -86,8 +86,12 @@ h1, h2, h3{
 .form-1{
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
     gap: .5rem;
+}
+
+.form-1-cnt{
+    display: flex;
+    flex-direction: column;
 }
 
 
@@ -367,7 +371,11 @@ footer{
     font-size: 0.875rem;
 }
 
-.ft-btn a{
+.phn a, .eml a{
+    text-decoration: none;
+}
+
+.ft-lnk1 a, .ft-lnk2 a{
     text-decoration: none;
     font-family: "Open Sans", sans-serif;
     font-weight: 400;
@@ -375,7 +383,7 @@ footer{
     color: #fff;
 }
 
-.ft-btn a:hover{
+.ft-lnk1 a:hover, .ft-lnk2 a:hover{
     text-decoration: underline;
     color: #6281d5;
 }
@@ -398,8 +406,10 @@ footer{
     width: 2rem;
 }
 
-.socials a:hover{
-    color: #6281d5;
+.socials a:hover, .socials a:focus { 
+    filter: invert(57%) sepia(12%) 
+    saturate(2281%) hue-rotate(188deg) 
+    brightness(86%) contrast(92%);
 }
 
 @media (max-width: 1024px) {
@@ -437,13 +447,23 @@ footer{
         margin-top: 0;
     }
 
-    .soc-left p, .strc-left p{
+    .soc-left p{
         font-size: 0.875rem;
+    }
+
+    .strc-left p{
+        font-size: 0.875rem;
+        width: 100%;
     }
 
     .form-1{
         gap: .5rem;
+    }
 
+    .form-1-cnt{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
     }
 
     .form-1 input{
@@ -452,8 +472,9 @@ footer{
     }
 
     .form-1 button{
-        width: 30%;
+        width: 50%;
     }
+
 
     .sect-2{
         background-image:url(img/bg-curve-mobile.svg);
@@ -472,7 +493,7 @@ footer{
     }
 
     .stc-left, .stc-right, 
-    .strc-left, .strc-right  {
+    .strc-left {
         width: 100%;
     }
 
@@ -487,6 +508,12 @@ footer{
 
     .stc-lft-tp p{
         width: 100%;
+    }
+
+    .strc-right{
+        width: 85%;
+        margin-left: 0;
+        padding-right: 0;
     }
 
     .testimonial{
@@ -573,12 +600,21 @@ footer{
 
     .form-1{
         gap: 1rem;
+        width: 100%;
+        flex-wrap: wrap;
+
     }
 
     .form-1 input{
         gap: 2rem;
         width: 100%;
         margin-right: 0;
+    }
+
+    .form-1-cnt{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
     }
 
     .form-1 button, .form-2 button{
@@ -603,7 +639,7 @@ footer{
     }
 
     .stc-left, .stc-right, 
-    .strc-left, .strc-right  {
+    .strc-left {
         width: 100%;
     }
 
@@ -618,6 +654,13 @@ footer{
 
     .strc-right{
         width: 85%;
+        margin-left: 0;
+        padding-right: 0;
+    }
+
+    .stc-right img {
+        width: 100%;
+        height: auto;
     }
 
     
